@@ -12,7 +12,7 @@ I think I could improve this project by allowing the option to pick future dates
 
 Installation
 
-None required, just follow link https://julieanni.github.io/Javascript-Password-Generator/
+None required, just follow link https://julieanni.github.io/Work-Day-Scheduler/.
 
 Usage
 
