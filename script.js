@@ -61,15 +61,9 @@ $(document).ready(function(){
 
      //Clear Button Listener
      $(".clearBtn").on("click", function(){
+ 
+        localStorage.clear("events", JSON.stringify(events));
         
-        var text = $(this).siblings(".description").val();
-        var time = $(this).parent().attr("id");
-        var dateAdded = moment().format("dddd, MMM Do");
- 
-        events.push ({description: text, time: time, date: dateAdded});
- 
-        localStorage.("events", JSON.stringify(events));
-        console.log(localStorage)
      });
 
   
