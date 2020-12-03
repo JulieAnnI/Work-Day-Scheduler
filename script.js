@@ -10,6 +10,18 @@ $(document).ready(function(){
     $("#currentDay").text(moment().format("dddd, MMMM Do"));
     
 
+    //Displays Stored Data
+    var storedEvents = JSON.parse(localStorage.getItem("events"));
+
+    if (storedEvents !== null) {
+        events = storedEvents;
+    }
+
+    for(var i = 0; i < events.length; i++) {
+        var userDescription = events[i].description;
+        $("#" + events[i].time).children(".description").text(userDescription);
+      }
+
 
    
     //Save Button Listener
