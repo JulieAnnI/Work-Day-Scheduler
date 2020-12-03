@@ -1,8 +1,7 @@
 $(document).ready(function(){
     
     //Variables
-    var currentHour = moment().hour(); 
-    var num = 8; 
+    var currentHour = moment().hour();  
     var events = []
     
     
@@ -59,8 +58,6 @@ $(document).ready(function(){
             $(this).addClass("future");
         }
     })
-
-
 
   
 });
